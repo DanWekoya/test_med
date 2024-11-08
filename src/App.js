@@ -21,11 +21,17 @@ function App() {
           {/* Set up the Routes for different pages */}
           <Routes>
             {/* Define individual Route components for different pages */}
+          <Route path = "Landing_Page" element = {<Navbar/>}></Route>
+          <Route path = "Login" element = {<Navbar/>}></Route>
+          <Route path = "Sign_up" element = {<Navbar/>}></Route>
           </Routes>
         </BrowserRouter>
     </div>
   );
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 
 // Export the App component as the default export
 export default App;
