@@ -4,6 +4,9 @@ import React, { useEffect } from 'react';
 // Import components for routing from react-router-dom library
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+//Import Landing Page
+import Landing_Page from './Components/Landing_Page/Landing_Page';
+
 // Import custom Navbar component
 import Navbar from './Components/Navbar/Navbar';
 
@@ -30,7 +33,7 @@ function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = React.DOM.createRoot(document.getElementById('Landing_Page'));
 root.render(<App />);
 
 // Export the App component as the default export

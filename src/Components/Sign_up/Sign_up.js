@@ -47,3 +47,4 @@ function Sign_up (){
     </div>
     )
 }
+export default Sign_up;

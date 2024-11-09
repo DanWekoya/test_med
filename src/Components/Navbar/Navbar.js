@@ -1,6 +1,10 @@
 import React from 'react';
 import './Navbar.css';
 
+function handleClick(){
+    return "define function";
+}
+
 function Navbar (){
     return (
         <div className = "Navbar">
@@ -61,3 +65,4 @@ function Navbar (){
         </div>
     )   
 }
+export default Navbar;

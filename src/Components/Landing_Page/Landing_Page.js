@@ -1,13 +1,15 @@
 import React from 'react';
 import './Landing_Page.css';
+import { createRoot } from 'react-dom/client';
+
 
 function Landing_Page (){
     return (
-        <div ClassName = "Landing_Page">
+        <div Id = "Landing_Page">
         <section className="hero-section">
         <div>
           <div data-aos="fade-up" className="flex-hero">
-              
+
               <h1>
                 Your Health<br/>
                 <span className="text-gradient">
@@ -33,3 +35,4 @@ function Landing_Page (){
         </div>
     )
 }
+export default Landing_Page;
