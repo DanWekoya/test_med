@@ -1,11 +1,9 @@
 import React from 'react';
 import './Landing_Page.css';
-import { createRoot } from 'react-dom/client';
-
 
 function Landing_Page (){
     return (
-        <div Id = "Landing_Page">
+        <div ClassName = "Landing_Page">
         <section className="hero-section">
         <div>
           <div data-aos="fade-up" className="flex-hero">

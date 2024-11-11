@@ -33,8 +33,5 @@ function App() {
   );
 }
 
-const root = React.DOM.createRoot(document.getElementById('Landing_Page'));
-root.render(<App />);
-
 // Export the App component as the default export
 export default App;
