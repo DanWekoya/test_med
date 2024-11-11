@@ -24,6 +24,7 @@ function App() {
           {/* Set up the Routes for different pages */}
           <Routes>
             {/* Define individual Route components for different pages */}
+          <Route path = "/" element = {<Landing_Page/>}></Route>
           <Route path = "Landing_Page" element = {<Navbar/>}></Route>
           <Route path = "Login" element = {<Navbar/>}></Route>
           <Route path = "Sign_up" element = {<Navbar/>}></Route>
