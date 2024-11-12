@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Import Landing Page
-import Landing_Page from './Components/Landing_Page/Landing_Page';
+import LandingPage from './Components/Landing_Page/LandingPage';
 
 // Import custom Navbar component
 import Navbar from './Components/Navbar/Navbar';
@@ -14,7 +14,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Login from './Components/Login/Login';
 
 // Import Signup component
-import Sign_up from './Components/Sign_up/Sign_up';
+import SignUp from './Components/SignUp/SignUp';
 
 // Function component for the main App
 function App() {
@@ -30,9 +30,9 @@ function App() {
           {/* Set up the Routes for different pages */}
           <Routes>
             {/* Define individual Route components for different pages */}
-          <Route path = "/" element = {<Landing_Page/>}></Route>
-          <Route path = "Login" element = {<Login/>}></Route>
-          <Route path = "Sign_up" element = {<Sign_up/>}></Route>
+          <Route path = "/" element = {<LandingPage />}></Route>
+          <Route path = "/Login" element = {<Login />}></Route>
+          <Route path  = "/SignUp" element = {<SignUp />}></Route>
           </Routes>
         </BrowserRouter>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing_Page.css';
 
-function Landing_Page (){
+function LandingPage (){
     return (
         <div ClassName = "Landing_Page">
         <section className="hero-section">
@@ -33,4 +33,4 @@ function Landing_Page (){
         </div>
     )
 }
-export default Landing_Page;
+export default LandingPage;
