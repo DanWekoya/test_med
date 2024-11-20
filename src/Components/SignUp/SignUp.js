@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../config';
 
 // Function component for Sign Up form
-const Sign_Up = () => {
+const SignUp = () => {
     // State variables using useState hook
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -66,6 +66,25 @@ const Sign_Up = () => {
                             <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" id="email" className="form-control" placeholder="Enter your email" aria-describedby="helpId" />
                             {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
                         </div>
+                        <div className= "form-group">
+                            <label htmlFor="name">Name</label>
+                            <input value={name} onChange={(e)=> setName(e.target.value)} type ="name" name ="name" id="name" className="form-control" placeholder="Enter your name" aria-describedby="helpId" />
+                            {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
+                        </div>
+                        <div className= "form-group">
+                            <label htmlFor="phone">Phone</label>
+                            <input value={phone} onChange={(e)=> setPhone(e.target.value)} type ="phone" name ="phone" id="phone" className="form-control" placeholder="Enter phone number" aria-describedby="helpId" />
+                            {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
+                        </div>
+                        <div className= "form-group">
+                            <label htmlFor="password">Password</label>
+                            <input value={password} onChange={(e)=> setPassword(e.target.value)} type ="password" name ="password" id="password" className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
+                            {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
+                        </div>
+                        <div className="SignUp-btns">
+                            <button className="SignUp-btn" OnClick={register}>Sign Up</button>
+                            <button className="Reset-btn">Reset</button>
+                        </div>
                         {/* Apply similar logic for other form elements like name, phone, and password to capture user information */}
                     </form>
                 </div>
@@ -75,4 +94,4 @@ const Sign_Up = () => {
         {/* Note: Sign up role is not stored in the database. Additional logic can be implemented for this based on your React code. */}
 }
 
-export default Sign_Up; // Export the Sign_Up component for use in other components
+export default SignUp; // Export the Sign_Up component for use in other components
