@@ -57,7 +57,7 @@ const SignUp = () => {
 
     // JSX to render the Sign Up form
     return (
-        <div className="container" style={{marginTop:'5%'}}>
+        <div className="container" style={{marginTop:'7%'}}>
             <div className="signup-grid">
                 <div className="signup-form">
                     <form method="POST" onSubmit={register}>
@@ -82,7 +82,7 @@ const SignUp = () => {
                             {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
                         </div>
                         <div className="SignUp-btns">
-                            <button className="SignUp-btn" OnClick={register}>Sign Up</button>
+                            <button className="SignUp-btn" onClick={register}>Sign Up</button>
                             <button className="Reset-btn">Reset</button>
                         </div>
                         {/* Apply similar logic for other form elements like name, phone, and password to capture user information */}
