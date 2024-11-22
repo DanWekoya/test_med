@@ -3,7 +3,7 @@ import './Landing_Page.css';
 
 function LandingPage (){
     return (
-        <div ClassName = "Landing_Page">
+        <div className = "Landing_Page">
         <section className="hero-section">
         <div>
           <div data-aos="fade-up" className="flex-hero">
@@ -18,7 +18,7 @@ function LandingPage (){
                 <div className="blob-cont">
                     <div className="blue blob"></div>
                 </div>
-                <div ClassName="blob-cont">
+                <div className="blob-cont">
                     <div className="blue1 blob"></div>
                 </div>
               <h4>

@@ -3,7 +3,7 @@ import './Login.css';
 
 function Login() {
     return(
-        <div ClassName = "Login">
+        <div className = "Login">
             <div className="container">
         {/*Div for login grid layout*/}
         <div className="login-grid">
@@ -12,7 +12,7 @@ function Login() {
             <h2>Login</h2>
           </div>
           {/*Additional login text with a link to Sign Up page*/}
-          <div ClassName="login-text">
+          <div className="login-text">
             Are you a new member? <span><a href="..Components/Sign_Up/Sign_Up.html" style={{color: '#2190FF'}}> Sign Up Here</a></span>
           </div>
           <br />
