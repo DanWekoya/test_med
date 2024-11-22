@@ -81,9 +81,9 @@ const SignUp = () => {
                             <input value={password} onChange={(e)=> setPassword(e.target.value)} type ="password" name ="password" id="password" className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
                             {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
                         </div>
-                        <div className="SignUp-btns">
-                            <button className="SignUp-btn" onClick={register}>Sign Up</button>
-                            <button className="Reset-btn">Reset</button>
+                        <div className="form-group">
+                            <button className="btn-group" onClick={register}>Sign Up</button>
+                            <button className="btn-group">Reset</button>
                         </div>
                         {/* Apply similar logic for other form elements like name, phone, and password to capture user information */}
                     </form>
